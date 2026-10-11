@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luis Baoy | Senior Data Analyst</title>
+<meta name="description" content="Luis Baoy, Senior Data Analyst specializing in PMO and portfolio analytics, BI reporting, and data governance.">
+<meta property="og:title" content="Luis Baoy | Senior Data Analyst">
+<meta property="og:description" content="PMO &amp; portfolio analytics, BI reporting, and data governance.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --surface: #ffffff;
+    --text: #1b2430;
+    --muted: #5b6676;
+    --line: #e2e6ec;
+    --accent: #0f766e;
+    --accent-soft: #d9f0ed;
+    --accent-text: #ffffff;
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1319;
+      --surface: #151c25;
+      --text: #e8edf3;
+      --muted: #9aa6b5;
+      --line: #263140;
+      --accent: #4fd1c5;
+      --accent-soft: #14312f;
+      --accent-text: #08201e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  .skip {
+    position: absolute; left: -999px; top: 8px;
+    background: var(--accent); color: var(--accent-text);
+    padding: 8px 14px; border-radius: 8px; z-index: 10;
+  }
+  .skip:focus { left: 12px; }
+
+  /* Nav */
+  header.nav {
+    position: sticky; top: 0; z-index: 5;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; }
+  .brand { font-weight: 700; color: var(--text); letter-spacing: .2px; }
+  .nav ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
+  .nav ul a { color: var(--muted); font-size: .92rem; }
+  .nav ul a:hover { color: var(--text); text-decoration: none; }
+  @media (max-width: 640px) { .nav ul { display: none; } }
+
+  /* Hero */
+  .hero { padding: 72px 0 56px; }
+  .eyebrow {
+    display: inline-block; background: var(--accent-soft); color: var(--accent);
+    font-size: .82rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 10px; letter-spacing: -.5px; }
+  .hero .role { font-size: clamp(1.05rem, 2.6vw, 1.3rem); color: var(--muted); margin: 0 0 6px; }
+  .hero .place { color: var(--muted); font-size: .95rem; margin: 0 0 28px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 10px; font-weight: 600; font-size: .95rem;
+    border: 1px solid var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); }
+  .btn.ghost { color: var(--accent); }
+  .btn:hover { text-decoration: none; opacity: .9; }
+
+  /* Sections */
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.5rem; margin: 0 0 22px; letter-spacing: -.2px; }
+  p { margin: 0 0 14px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 22px 24px; margin-bottom: 16px;
+  }
+  .card h3 { margin: 0; font-size: 1.1rem; }
+  .card .org { color: var(--accent); font-weight: 600; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 2px 0 12px; }
+  .card ul { margin: 0; padding-left: 20px; }
+  .card li { margin-bottom: 6px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .grid .card { margin: 0; }
+  .grid h3 { font-size: 1rem; margin-bottom: 10px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .chips li {
+    background: var(--accent-soft); color: var(--accent);
+    font-size: .88rem; font-weight: 500; padding: 5px 12px; border-radius: 999px;
+  }
+  .plain { margin: 0; padding-left: 20px; }
+  .plain li { margin-bottom: 6px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
+
+  @media print {
+    header.nav, .btns { display: none; }
+    body { background: #fff; color: #000; }
+    .card { border-color: #ccc; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Luis Baoy</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#learning">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <span class="eyebrow">Open to connect</span>
+      <h1>Luis Baoy</h1>
+      <p class="role">Senior Data Analyst | PMO &amp; Portfolio Analytics | BI Reporting, Data Governance</p>
+      <p class="place">Calabarzon, Philippines</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:baoyluis@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/luisbaoy" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://luisbaoy.wordpress.com" target="_blank" rel="noopener">Blog</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>I'm a Senior Data Analyst and PMO Analyst who owns enterprise BI reporting, PMO systems operations, and portfolio data governance.</p>
+      <p>I work with PMO leadership, IT teams, and external vendors to deliver reliable analytics, manage system performance incidents, and turn complex operational data into insights that decision-makers can act on.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+
+      <article class="card">
+        <h3>Senior Data Analyst / PMO Analyst</h3>
+        <div class="org">ON Semiconductor</div>
+        <div class="meta">July 2018 &ndash; Present &middot; Muntinlupa City, Philippines</div>
+        <ul>
+          <li>Data analysis and business intelligence using Qlik, Power BI, and Tableau</li>
+          <li>PMO systems and portfolio management with ResourceFirst / PDWare and OnePlan</li>
+          <li>KPI and financial reporting enablement</li>
+          <li>Performance monitoring and incident coordination</li>
+          <li>Vendor and cross-functional coordination</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Tax Data Analyst</h3>
+        <div class="org">EY</div>
+        <div class="meta">November 2016 &ndash; May 2018 &middot; Makati, Philippines</div>
+      </article>
+
+      <article class="card">
+        <h3>Intern</h3>
+        <div class="org">Gulliver Integrated Outsourcing Inc.</div>
+        <div class="meta">June 2015 &ndash; October 2015 &middot; Makati, Philippines</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Top skills</h3>
+          <ul class="chips">
+            <li>Project Management Office (PMO)</li>
+            <li>Microsoft Power Automate</li>
+            <li>Microsoft Power Apps</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>BI and analytics tools</h3>
+          <ul class="chips">
+            <li>Qlik</li>
+            <li>Power BI</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>PMO systems</h3>
+          <ul class="chips">
+            <li>ResourceFirst / PDWare</li>
+            <li>OnePlan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <ul class="plain">
+            <li>Filipino (Native or Bilingual)</li>
+            <li>English (Professional Working)</li>
+            <li>Japanese (Elementary)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning">
+    <div class="wrap">
+      <h2>Education &amp; Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Education</h3>
+          <p style="margin:0"><strong>Far Eastern University</strong><br>
+          Bachelor of Science in Information Technology<br>
+          <span class="meta">2012 &ndash; 2016</span></p>
+        </div>
+        <div class="card">
+          <h3>Certifications</h3>
+          <ul class="plain">
+            <li>HTML Fundamentals Course</li>
+            <li>AI in Project Management</li>
+            <li>Managing Projects with Microsoft Teams</li>
+            <li>Business Acumen for Project Managers</li>
+            <li>Project Management with Microsoft Copilot</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>The best way to reach me is by email or LinkedIn.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:baoyluis@gmail.com">baoyluis@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/luisbaoy" target="_blank" rel="noopener">linkedin.com/in/luisbaoy</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Luis Baoy. All rights reserved.</div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
