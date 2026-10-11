@@ -26,35 +26,35 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-  body { margin: 0; background: var(--paper); color: var(--text); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: var(--paper); color: var(--text); font-family: var(--sans); line-height: 1.55; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
   a:focus-visible { outline: 3px solid #88a92c; outline-offset: 4px; border-radius: 4px; }
-  .wrap { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+  .wrap { width: min(1040px, calc(100% - 48px)); margin: 0 auto; }
   .skip { position: absolute; left: -999px; top: 12px; z-index: 20; background: var(--accent); color: var(--ink); padding: 10px 14px; border-radius: 6px; }
   .skip:focus { left: 12px; }
   .nav { position: sticky; top: 0; z-index: 10; color: #f8f8f1; background: rgb(20 32 39 / 94%); border-bottom: 1px solid rgb(255 255 255 / 10%); backdrop-filter: blur(14px); }
-  .nav-inner { display: flex; height: 72px; align-items: center; justify-content: space-between; }
+  .nav-inner { display: flex; height: 62px; align-items: center; justify-content: space-between; }
   .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 750; letter-spacing: -.03em; }
   .brand-mark { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 50%; background: var(--accent); color: var(--ink); font: 700 13px var(--serif); }
   .nav ul { display: flex; gap: clamp(16px, 3vw, 34px); list-style: none; margin: 0; padding: 0; }
   .nav ul a { color: #d2d9d8; font-size: .85rem; transition: color .2s ease; }
   .nav ul a:hover { color: var(--accent); }
 
-  .hero { position: relative; overflow: hidden; color: #f8f8f1; background: var(--ink); padding: clamp(70px, 10vw, 126px) 0 88px; }
+  .hero { position: relative; overflow: hidden; color: #f8f8f1; background: var(--ink); padding: clamp(54px, 7vw, 82px) 0 58px; }
   .hero::after { position: absolute; content: ""; width: 580px; height: 580px; top: -265px; right: -95px; border: 1px solid rgb(211 242 106 / 13%); border-radius: 50%; box-shadow: 0 0 0 58px rgb(211 242 106 / 3%), 0 0 0 118px rgb(211 242 106 / 2%); pointer-events: none; }
-  .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(220px, .7fr); gap: 70px; align-items: end; }
-  .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 28px; color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 700; }
+  .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(200px, .7fr); gap: 48px; align-items: end; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 18px; color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 700; }
   .eyebrow::before { content: ""; width: 24px; height: 1px; background: currentColor; }
-  h1 { max-width: 780px; margin: 0; font-size: clamp(3.4rem, 8.2vw, 7.4rem); line-height: .96; letter-spacing: -.075em; font-weight: 650; }
+  h1 { max-width: 780px; margin: 0; font-size: clamp(3.1rem, 6.8vw, 5.7rem); line-height: .96; letter-spacing: -.075em; font-weight: 650; }
   h1 span { color: var(--accent); font-family: var(--serif); font-weight: 400; font-style: italic; letter-spacing: -.065em; }
-  .hero-role { max-width: 600px; margin: 28px 0 0; color: #cad2d0; font-size: clamp(1.05rem, 2vw, 1.3rem); line-height: 1.55; }
+  .hero-role { max-width: 600px; margin: 18px 0 0; color: #cad2d0; font-size: clamp(1.05rem, 2vw, 1.3rem); line-height: 1.55; }
   .hero-aside { padding: 0 0 4px 24px; border-left: 1px solid rgb(255 255 255 / 18%); color: #cad2d0; font-size: .93rem; }
   .hero-aside strong { display: block; margin-bottom: 9px; color: #fff; font-size: .76rem; text-transform: uppercase; letter-spacing: .12em; }
   .hero-aside p { margin: 0 0 22px; }
   .availability { display: flex; align-items: center; gap: 9px; color: var(--accent); font-size: .8rem; font-weight: 650; }
   .availability::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 4px rgb(211 242 106 / 13%); }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-  .btn { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 10px; padding: 11px 18px; border: 1px solid rgb(255 255 255 / 28%); border-radius: 4px; color: #fff; font-size: .87rem; font-weight: 650; transition: transform .2s ease, background .2s ease, color .2s ease; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .btn { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; gap: 10px; padding: 9px 15px; border: 1px solid rgb(255 255 255 / 28%); border-radius: 4px; color: #fff; font-size: .87rem; font-weight: 650; transition: transform .2s ease, background .2s ease, color .2s ease; }
   .btn:hover { transform: translateY(-2px); text-decoration: none; }
   .btn.primary { border-color: var(--accent); background: var(--accent); color: var(--ink); }
   .btn.primary:hover { background: #e2ff90; }
@@ -62,16 +62,16 @@
 
   .proof { background: var(--accent); color: var(--ink); }
   .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-  .proof-item { display: flex; min-height: 96px; align-items: center; gap: 15px; padding: 20px 28px; border-left: 1px solid rgb(20 32 39 / 18%); }
+  .proof-item { display: flex; min-height: 76px; align-items: center; gap: 14px; padding: 14px 24px; border-left: 1px solid rgb(20 32 39 / 18%); }
   .proof-item:first-child { border-left: 0; padding-left: 0; }
   .proof-number { font: 400 2.35rem/.9 var(--serif); letter-spacing: -.06em; }
   .proof-copy { font-size: .76rem; line-height: 1.35; font-weight: 650; }
 
-  .section { padding: clamp(68px, 9vw, 112px) 0; border-bottom: 1px solid var(--line); }
-  .section-heading { display: grid; grid-template-columns: 180px 1fr; gap: 40px; margin-bottom: 38px; }
+  .section { padding: clamp(42px, 5vw, 64px) 0; border-bottom: 1px solid var(--line); }
+  .section-heading { display: grid; grid-template-columns: 180px 1fr; gap: 40px; margin-bottom: 24px; }
   .section-label { padding-top: 10px; color: #71811f; text-transform: uppercase; letter-spacing: .15em; font-size: .72rem; font-weight: 750; }
-  h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -.06em; line-height: 1.08; font-weight: 620; }
-  .lead { max-width: 720px; margin: 19px 0 0; color: var(--muted); font-size: 1.08rem; line-height: 1.75; }
+  h2 { margin: 0; font-size: clamp(1.8rem, 3.1vw, 2.7rem); letter-spacing: -.06em; line-height: 1.08; font-weight: 620; }
+  .lead { max-width: 720px; margin: 12px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.6; }
   .about-layout { display: grid; grid-template-columns: 180px 1fr; gap: 40px; }
   .about-note { padding-top: 4px; color: var(--muted); font: italic 1.05rem/1.5 var(--serif); }
   .about-copy { max-width: 760px; }
@@ -79,7 +79,7 @@
 
   .experience { background: var(--white); }
   .timeline { margin-left: 220px; border-top: 1px solid var(--line); }
-  .job { display: grid; grid-template-columns: 1fr 180px; gap: 30px; padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
+  .job { display: grid; grid-template-columns: 1fr 180px; gap: 30px; padding: 20px 0 22px; border-bottom: 1px solid var(--line); }
   .job h3 { margin: 0; font-size: 1.18rem; letter-spacing: -.02em; }
   .org { margin-top: 4px; color: #61751b; font-size: .94rem; font-weight: 700; }
   .meta { margin-top: 8px; color: var(--muted); font-size: .82rem; }
@@ -90,7 +90,7 @@
 
   .skills-layout { display: grid; grid-template-columns: 180px 1fr; gap: 40px; }
   .skill-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  .skill-group { min-height: 160px; padding: 24px; background: var(--paper); }
+  .skill-group { min-height: 126px; padding: 18px; background: var(--paper); }
   .skill-group h3 { margin: 0 0 16px; font-size: .91rem; letter-spacing: -.01em; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
   .chips li { padding: 6px 10px; border: 1px solid #d8ddce; border-radius: 3px; color: #526128; background: #eef1e4; font-size: .77rem; font-weight: 600; }
@@ -105,7 +105,7 @@
   .learning-card strong { color: var(--text); }
   .certs { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; }
 
-  .contact { padding: clamp(70px, 10vw, 118px) 0; color: #f8f8f1; background: var(--ink); }
+  .contact { padding: clamp(52px, 7vw, 76px) 0; color: #f8f8f1; background: var(--ink); }
   .contact-layout { display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: end; }
   .contact .section-label { color: var(--accent); }
   .contact h2 { max-width: 700px; }
@@ -180,9 +180,9 @@
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Senior Data Analyst · PMO</div>
-        <h1 id="hero-title">Make data<br>move <span>decisions.</span></h1>
-        <p class="hero-role">I turn complex portfolio data into clear reporting, stronger systems, and confident decisions.</p>
+        <div class="eyebrow">Portfolio analytics · BI · PMO systems</div>
+        <h1 id="hero-title">I connect<br>the <span>dots.</span></h1>
+        <p class="hero-role">I bring portfolio data, business intelligence, and PMO operations together—so leaders can see the full picture and act with confidence.</p>
         <div class="hero-actions">
           <a class="btn primary" href="mailto:baoyluis@gmail.com">Let’s talk <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="btn" href="https://www.linkedin.com/in/luisbaoy" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -195,23 +195,23 @@
     </div>
   </section>
   <div class="proof" aria-label="Experience highlights"><div class="wrap proof-grid">
-    <div class="proof-item"><span class="proof-number">08+</span><span class="proof-copy">years in analytics<br>&amp; PMO operations</span></div>
-    <div class="proof-item"><span class="proof-number">03</span><span class="proof-copy">leading BI platforms<br>Qlik · Power BI · Tableau</span></div>
-    <div class="proof-item"><span class="proof-number">360°</span><span class="proof-copy">portfolio visibility<br>from data to decision</span></div>
+    <div class="proof-item"><span class="proof-number">08+</span><span class="proof-copy">years connecting analytics<br>with PMO operations</span></div>
+    <div class="proof-item"><span class="proof-number">03</span><span class="proof-copy">BI platforms: Qlik, Power BI<br>&amp; Tableau</span></div>
+    <div class="proof-item"><span class="proof-number">02</span><span class="proof-copy">portfolio systems: ResourceFirst<br>/ PDWare and OnePlan</span></div>
   </div></div>
 
   <section class="section" id="about">
     <div class="wrap about-layout">
       <div class="section-label">01 / About</div>
-      <div class="about-copy"><h2>Clarity for complex work.</h2>
-        <p class="lead">I’m a Senior Data Analyst and PMO Analyst who helps teams see the full picture—across portfolios, performance, and the systems that keep work moving.</p>
-        <p>I partner with PMO leadership, IT teams, and vendors to make enterprise reporting dependable, improve system operations, and shape complex operational data into insights people can act on.</p>
+      <div class="about-copy"><h2>The value is in the connections.</h2>
+        <p class="lead">I work at the intersection of portfolio analytics, BI reporting, and PMO systems. That combination helps turn disconnected project data into a picture leaders can use.</p>
+        <p>At ON Semiconductor, I partner with PMO leadership, IT teams, and vendors to improve reporting reliability, resolve system issues, and make operational data easier to act on.</p>
       </div>
     </div>
   </section>
 
   <section class="section experience" id="experience">
-    <div class="wrap"><div class="section-heading"><div class="section-label">02 / Experience</div><div><h2>Where I’ve made an impact.</h2><p class="lead">A career built around better visibility, reliable systems, and useful business intelligence.</p></div></div>
+    <div class="wrap"><div class="section-heading"><div class="section-label">02 / Experience</div><div><h2>Experience at a glance.</h2><p class="lead">From enterprise analytics and portfolio platforms to performance and incident coordination.</p></div></div>
       <div class="timeline">
         <article class="job">
           <div><h3>Senior Data Analyst / PMO Analyst</h3><div class="org">ON Semiconductor</div><div class="meta">Muntinlupa City, Philippines</div>
@@ -225,8 +225,8 @@
   </section>
 
   <section class="section" id="skills">
-    <div class="wrap skills-layout"><div class="section-label">03 / Expertise</div><div><h2>Tools for turning insight into action.</h2><p class="lead">A practical toolkit spanning analytics, automation, portfolio platforms, and communication.</p>
-      <div class="skill-groups" style="margin-top:30px">
+    <div class="wrap skills-layout"><div class="section-label">03 / Expertise</div><div><h2>The systems behind the insight.</h2><p class="lead">A rare overlap of BI platforms, portfolio systems, and workflow automation.</p>
+      <div class="skill-groups" style="margin-top:20px">
         <div class="skill-group"><h3>Business intelligence</h3><ul class="chips"><li>Qlik</li><li>Power BI</li><li>Tableau</li><li>KPI reporting</li></ul></div>
         <div class="skill-group"><h3>PMO &amp; portfolio</h3><ul class="chips"><li>Project Management Office</li><li>ResourceFirst / PDWare</li><li>OnePlan</li></ul></div>
         <div class="skill-group"><h3>Automation &amp; apps</h3><ul class="chips"><li>Power Automate</li><li>Power Apps</li><li>Microsoft Copilot</li></ul></div>
