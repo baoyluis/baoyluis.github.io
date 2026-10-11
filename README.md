@@ -17,9 +17,7 @@ A fast, lightweight, single-page site showing my professional background: experi
 
 ```
 .
-├── index.html     # Main page
-├── style.css      # Styles
-├── assets/        # Images and icons
+├── index.html     # The whole site (HTML, CSS and a tiny script in one file)
 └── README.md
 ```
 
@@ -37,7 +35,7 @@ Edit the files, commit the changes, and push. GitHub Pages republishes automatic
 
 ## Contact
 
-- LinkedIn: www.linkedin.com/in/luisbaoy
+- LinkedIn: [linkedin.com/in/luisbaoy](https://www.linkedin.com/in/luisbaoy)
 - Email: baoyluis@gmail.com
 
 ## License
